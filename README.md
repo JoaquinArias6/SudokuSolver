@@ -8,11 +8,10 @@ Project's description:
   
 An insight of the logic behind the problem:
 - First of all, one thing that comes to mind when solving sudokus is what amount 
-  of digits ables it to be solved, because as we know, if we place, for example, 
+  of digits ables the solution to be unique, because as we know, if we place, for example, 
   only one number on the grid, there will be a lot of possible solutions.
   Doing a little research, i've found out that the minimum amount of numbers
   that need to be placed on the grid layout, must be at least 17. Due to this fact, 
   having a placement of less than 17 numbers on the grid results in a sudoku with 
   multiple solutions.
-  
-- Secondly, 
+
