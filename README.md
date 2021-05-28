@@ -20,5 +20,5 @@ An insight of the logic behind the problem:
   column and sub-grid.
   To verify the previous conditions, we can use Hashing considering the digits as keys 
   and comprobing that the Hash does not have a list within itself that repeats any row 
-  number, column number, and subgrid number. Otherwise, the placement is invalid.
+  number, column number, or subgrid number. Otherwise, the placement is invalid.
 
