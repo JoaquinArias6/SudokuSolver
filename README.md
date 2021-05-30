@@ -36,9 +36,9 @@ An insight of the logic behind the problem:
     - The other way to resolve this problem is to change a little bit the first option to our favor.
       Placing a number without a clear methodology could be a bit inefficient, so to solve this issue 
       we can make the placement while listening to the probability of it's validity. 
-      For example, if there is three consecutive cells in a row that could be filled in with a three
-      and two of the same cells could contain a two, then it is wiser to place the two rather than the 
-      three, simply because that the probability that it's placement is right is significally higher than 
-      the probability of making a right placement of the three.
+      For example, if there is three consecutive cells in a row that could be filled in with a "3"
+      and two of the same cells could contain a "2", then it is wiser to place the "2" rather than the 
+      "3", simply because that the probability that it's placement is right is significally higher than 
+      the probability of making a right placement of the "3".
   Both options are valid. The first one is quite inefficient but it requires less code and the second one, 
   even if it requires more coding and thinking, it's more efficient.
