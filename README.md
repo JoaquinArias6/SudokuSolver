@@ -27,7 +27,7 @@ An insight of the logic behind the problem:
   In order to do the previous check, we could consider two options:
     - The first one is to simple use backtracking. If we place a digit on the grid following
       the rules of sudoku, we can continue placing another ones until we reach a dead end, 
-      meaning that we cannot keep placing anything on the grid to complete succesfully the
+      meaning that we cannot keep placing anything on the grid to succesfully complete the
       sudoku. When reaching this mentioned "dead point" we can change the digit of the last cell 
       we filled in, for another digit as long as the placement does not break the rules. If there
       is not even one that allows us to achieve a valid solution, then it is possible to leave that
