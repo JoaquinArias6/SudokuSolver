@@ -5,6 +5,7 @@ import java.awt.event.*;
 
 public class Sudoku implements ActionListener{
 
+    //Pre- declaración de objetos y variables
     JFrame frame;
     JTextField [] nums = new JTextField[81];
     //NumberFormatter formato;
@@ -27,7 +28,7 @@ public class Sudoku implements ActionListener{
         frame.setLayout(null);
         frame.getContentPane().setBackground(Color.getHSBColor(0, 0, 25));
 
-
+        //Es una opción cambiar el JTextField por lo siguiente y en consecuencia, se restringen las entradas a solo números
         //Restringe el formato de los cuadros de texto a solo numeros del 1 al 9
        /* NumberFormat auxFormato = NumberFormat.getIntegerInstance();
         formato = new NumberFormatter(auxFormato);
@@ -88,6 +89,7 @@ public class Sudoku implements ActionListener{
             }
         }
 
+        //label a mostrar como solución
         correcto = new JLabel("correcto");
         //correcto.setBounds(160, 550, 10, 3);
         correcto.setHorizontalAlignment(JLabel.CENTER);
@@ -152,10 +154,8 @@ public class Sudoku implements ActionListener{
                 NodoHash nodo;
                 String dig;
                 int contadorFilas = 1;
-                int contadorFilasAux = 1;
                 int contadorFilasAuxiliar = 1;
                 int contadorColumnas = 1;
-                int contadorColumnasAux = 1;
                 int contadorColumnasAuxiliar = 1;
 
 
