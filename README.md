@@ -40,5 +40,6 @@ An insight of the logic behind the problem:
       and two of the same cells could contain a "2", then it is wiser to place the "2" rather than the 
       "3", simply because that the probability that it's placement is right is significally higher than 
       the probability of making a right placement of the "3".
+  
   Both options are valid. The first one is quite inefficient but it requires less code and the second one, 
   even if it requires more coding and thinking, it's more efficient.
