@@ -121,13 +121,16 @@ public class Sudoku implements ActionListener{
        
     }
 
+
     public static void main(String[] args){
         Sudoku sud = new Sudoku();
     }
 
     public void actionPerformed(ActionEvent e){
         if (e.getSource()==submit){
-            
+            boolean esCorrecto= true;
+
+            //Verifica si la cantidad de dígitos ingresados por el usuario es menor a 17 o no
             int cantidadD = 0;
             for (int i=0;((i<81)); i++){
                 if((nums[i].getText().length()!=0)){
@@ -136,6 +139,85 @@ public class Sudoku implements ActionListener{
             }
             if (cantidadD>=17){  
                 correcto.setVisible(true);
+            }
+            else {
+                esCorrecto= false;
+            }
+
+            //Verifica si los dígitos ingresados cumplen con las reglas básicas del sudoku
+            if (esCorrecto){
+                
+                NodoHash [] mapeoDigitos = new NodoHash[9];
+                
+                NodoHash nodo;
+                String dig;
+                int contadorFilas = 1;
+                int contadorFilasAux = 1;
+                int contadorFilasAuxiliar = 1;
+                int contadorColumnas = 1;
+                int contadorColumnasAux = 1;
+                int contadorColumnasAuxiliar = 1;
+
+
+                for (int i =0; i<81; i++){
+                    
+                    dig = nums[i].getText();
+
+                    //Asigna un string a su digito correspondiente
+                    switch(dig){
+
+                        case "1":
+                            nodo = new NodoHash();
+                            nodo.setDigito(1);
+                            nodo.setColumna(contadorColumnas);
+                            break;
+
+                        case "2":
+                            nodo = new NodoHash();
+                            nodo.setDigito(2);
+                            break;
+
+                        case "3":
+                            nodo = new NodoHash();
+                            nodo.setDigito(3);
+                            break;
+
+                        case "4":
+                            nodo = new NodoHash();
+                            nodo.setDigito(4);
+                            break;
+
+                        case "5":
+                            nodo = new NodoHash();
+                            nodo.setDigito(5);
+                            break;
+
+                        case "6":
+                            nodo = new NodoHash();
+                            nodo.setDigito(6);
+                            break;
+
+                        case "7":
+                            nodo = new NodoHash();
+                            nodo.setDigito(7);
+                            break;
+
+                        case "8":
+                            nodo = new NodoHash();
+                            nodo.setDigito(8);
+                            break;
+                        
+                        case "9":
+                            nodo = new NodoHash();
+                            nodo.setDigito(9);
+                            break;
+
+                        default:
+                            break;
+                    }
+
+                    
+                }
             }
             //System.out.println(cantidadD);
         }
